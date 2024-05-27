@@ -37,19 +37,19 @@ body {
 
 .container {
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 10px;
 }
 
-.login {
+.cadastro {
     width: 30%;
     display: flex;
     padding: 30px 40px;
     flex-direction: column;
     gap: 30px;
+    /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -58,7 +58,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.login h2 {
+.cadastro h2 {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: -10px;
@@ -78,13 +78,9 @@ button {
     margin-bottom: 15px;
 }
 
-.login a:visited {
-    color: rgb(177, 0, 177);
-}
-
-.login a:hover {
-    color: rgba(207, 0, 0, 0.911);
-    text-decoration: underline; 
+.input p {
+    color: red;
+    font-weight: 650;
 }
 
 button {
@@ -118,7 +114,7 @@ button:hover {
     margin-top: 10px;
 }
 
-.login > p {
+.cadastro > p {
     font-weight: normal;
     text-align: center;
 }
