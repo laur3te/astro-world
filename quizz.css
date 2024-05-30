@@ -4,24 +4,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Figtree';
+    font-family: 'Figtree', sans-serif;
 }
-  
+
 body {
     background-color: black;
     color: black;
 }
-  
+
 a {
     color: #ffffff;
     text-decoration: none;
     transition: 0.5s;
 }
-  
+
 a:hover {
     color: #110f81;
 }
-  
+
 textarea:focus,
 input:focus,
 select:focus,
@@ -30,7 +30,7 @@ button:focus {
     border: 0 none;
     outline: 0;
 }
-  
+
 .container {
     display: grid;
     grid-template-areas:
@@ -40,14 +40,14 @@ button:focus {
     position: relative;
     height: 100vh;
 }
-  
+
 header,
 main {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-  
+
 header {
     grid-area: header;
     font-size: 30px;
@@ -57,18 +57,17 @@ header {
     color: white;
     background-color: black;
 }
-  
+
 main {
     grid-area: main;
     margin-top: 20px;
     margin-bottom: 140px;
 }
-  
-  
+
 .hide {
     display: none !important;
 }
-  
+
 /* SCORE CONTAINER */
 #quizz-container,
 #score-container {
@@ -78,32 +77,32 @@ main {
     border: 1px solid #e0e0e0;
     box-shadow: 7px 10px 0px rgba(0, 0, 0, 0.1);
 }
-  
+
 #quizz-container,
 #score-container {
     width: 500px;
     max-width: 90%;
 }
-  
+
 #score-container p {
     margin: 20px 0;
 }
-  
+
 #score-container #display-score {
     font-size: 32px;
     font-weight: bold;
 }
-  
+
 #correct-answers {
     font-weight: bold;
     color: #2eb94c;
 }
-  
+
 #questions-qty {
     font-weight: bold;
     color: rgb(14, 14, 189);
 }
-  
+
 #restart {
     background-color: rgb(14, 14, 189);
     color: #fff;
@@ -116,12 +115,12 @@ main {
     cursor: pointer;
     transition: 0.5s;
 }
-  
+
 #restart:hover {
     background-color: #2a272a;
     color: #ffffff;
 }
-  
+
 /* Quizz container */
 #question {
     text-align: center;
@@ -130,7 +129,7 @@ main {
     color: white;
     font-weight: bold;
 }
-  
+
 #answers-box button {
     display: flex;
     align-items: stretch;
@@ -142,12 +141,12 @@ main {
     cursor: pointer;
     transition: 0.5s;
 }
-  
+
 #answers-box button:hover {
     background-color: #2a272a;
     color: #fff;
 }
-  
+
 #answers-box .btn-letter {
     font-size: 30px;
     font-weight: bold;
@@ -162,7 +161,7 @@ main {
     padding: 5px;
     max-width: 45px;
 }
-  
+
 .question-answer {
     flex: 1 1 0;
     display: flex;
@@ -171,21 +170,21 @@ main {
     margin-left: 10px;
     font-size: 16px;
 }
-  
+
 #quizz-container .wrong-answer,
 #quizz-container .wrong-answer .btn-letter {
     background-color: red;
     color: #fff;
     border: none;
 }
-  
+
 #quizz-container .correct-answer,
 #quizz-container .correct-answer .btn-letter {
     background-color: green;
     color: #fff;
     border: none;
 }
-  
+
 /* RESPONSIVO */
 @media (max-width: 450px) {
 #quizz-container,
@@ -195,4 +194,3 @@ main {
       box-shadow: none;
     }
 }
-  
