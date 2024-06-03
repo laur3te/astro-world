@@ -16,9 +16,8 @@ body {
 
 .back-button {
     position: absolute;
-    top: 5px;
-    left: 3px;
     top: -28px;
+    left: 3px;
     background-color: transparent;
     color: white;
     border: none;
