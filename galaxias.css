@@ -23,7 +23,6 @@ body {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-weight: bold;
@@ -35,41 +34,41 @@ body {
     color: #e4e4e99c;
 }
 
-.navbar {
+.site-navigation {
     width: 100%;
     background-color: transparent;
     overflow: hidden;
 }
 
-.navbar-menu {
+.nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 0;
 }
 
-.navbar-item {
+.nav-link {
     padding: 14px 15px;
 }
 
-.navbar-item a {
+.nav-link a {
     color: white;
     text-decoration: none;
     font-weight: 300;
     transition: color 0.3s ease;
 }
 
-.navbar-item a:hover {
+.nav-link a:hover {
     font-weight: bold;
     color: #487ec49c;
 }
 
-.content {
+.main-content {
     padding: 20px;
     text-align: center;
 }
 
-.content h1 {
+.main-content h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     margin-top: 0;
@@ -78,24 +77,20 @@ body {
     transition: color 0.3s;
 }
 
-.content h1:hover{ 
-    color: #487ec49c;
-}
-
-#pagina {
+#page-container {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
 
-#feed {
+#image-grid {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
     justify-content: center;
 }
 
-.image {
+.image-card {
     position: relative;
     width: 300px;
     height: 300px;
@@ -104,14 +99,14 @@ body {
     border-radius: 0px;
 }
 
-.image img {
+.image-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.hover-message {
+.image-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -128,6 +123,6 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.image:hover .hover-message {
+.image-card:hover .image-overlay {
     opacity: 1;
 }

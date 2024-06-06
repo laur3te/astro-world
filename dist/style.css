@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+body {
+  background-image: url("pic-background/earth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: auto;
+  margin: 0;
+  display: grid;
+  grid-template-areas: "topnav topnav topnav" "content content content" "footer";
+  height: 100vh;
+  width: 100%;
+}
+
+.list {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: start;
+  align-items: center;
+  gap: 40px;
+  margin-right: 10px;
+  margin-top: -80px;
+}
+
+.link {
+  margin-top: 5px;
+  position: relative;
+  display: grid;
+  grid-template-areas: "topnav";
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.list a:hover {
+  color: #e4e4e99c;
+}
+
+.title {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 90px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.content {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: lighter;
+  display: grid;
+  grid-template-areas: "content";
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 5px;
+  height: 50px;
+}
+
+.content p {
+  text-align: center;
+}
+
+.footer {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 5px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+  color: #e4e4e99c;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -65px;
+  margin-top: -20px;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+}
+
+#button {
+  margin-top: 50px;
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: white;
+  border: 1px solid white;
+  color: black;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#button:hover {
+  color: white;
+  background: transparent;
+}

@@ -1,35 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree&family=Roboto:wght@400;700&display=swap");
 
 body {
     background-image: url('pic-background/earth.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    overflow:hidden;
+    overflow-y: auto;
     margin: 0;
     display: grid;
-    grid-template-areas: 
-    "topnav"
-    "content"
-    "footer";
+    grid-template-areas:
+        "topnav"
+        "content"
+        "footer";
+    grid-template-rows: auto 1fr auto;
     height: 100vh;
     width: 100%;
 }
 
+.topnav {
+    grid-area: topnav;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.0);
+    padding: 10px;
+}
+
 .list {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
     font-weight: bold;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     gap: 40px;
-    margin-right: 10px;
-    margin-top: -80px;
+    margin: 0;
+    list-style: none;
+    padding-left: 20px; 
 }
 
 .link {
-    margin-top: 5px;
-    position: relative;
-    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
     text-decoration: none;
     color: #fff;
     font-weight: 700;
@@ -39,83 +48,67 @@ body {
     color: #e4e4e99c;
 }
 
-.title{
+.title {
     font-family: 'Times New Roman', Times, serif;
     color: white;
-    font-size: 90px;
+    font-size: 100px;
     font-weight: bold;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 120px;
 }
 
 .content {
+    grid-area: content;
     font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    font-weight: lighter;
-    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+    display: grid;
+    flex-direction: auto auto auto;
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 5px;
-    height: 80hv;
-}
-
-.content p {
+    padding: 10px;
     text-align: center;
+    margin-bottom: 90px;
 }
 
-.footer {
+footer {
+    grid-area: footer;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
-    position: absolute;
-    bottom: 0;
     color: white;
-    padding: 5px;
-    margin-left: 30px;
-    cursor: pointer;
-}
-
-.footer a {
-    text-decoration: none;
-    color: white;
-}
-
-.footer a:hover {
-    color: #e4e4e99c;
+    padding: 10px;
+    text-align: end;
+    background-color: rgba(0, 0, 0, 0.0); /* Background for visibility */
 }
 
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -65px;
-    margin-top: -20px;
-    width: 130px;
-    height: 40px;
-    text-align: center;
+    position: relative;
+    top: 0px;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
 }
 
 #button {
-    margin-top: 50px;
     outline: none;
     height: 40px;
-    text-align: center;
     width: 130px;
     border-radius: 40px;
     background: white;
     border: 1px solid white;
     color: black;
     letter-spacing: 1px;
-    text-shadow: 0;
-    font-size: 12px;
-    font-weight: bold;
+    text-shadow: none;
+    font-size: 13px;
+    font-weight: bolder;
     cursor: pointer;
     transition: all 0.25s ease;
 }
 
 #button:hover {
-    color:white;
+    color: white;
     background: transparent;
 }
