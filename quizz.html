@@ -5,17 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASTRO WORLD > QUIZ</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Figtree&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="quizz.css" />
-    <link rel="icon" href="pic-logo/saturn.png"
-
+    <link rel="icon" href="pic-logo/saturn.png" />
     <script src="quizz.js" defer></script>
 </head>
 <body>
@@ -27,15 +20,15 @@
         <main>
             <!-- QUIZZ CONTAINER -->
             <div id="quizz-container">
-                <p id="question">
+                <p id="question" aria-live="polite">
                     <span id="question-number">1</span> &#8212;
                     <span id="question-text">Qual é a unidade de medida para metros?</span>
                 </p>
                 <div id="answers-box">
-                    <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
-                    <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
-                    <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
-                    <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+                    <button class="answer-option"><span class="btn-letter"></span> <span class="question-answer"></span></button>
+                    <button class="answer-option"><span class="btn-letter"></span> <span class="question-answer"></span></button>
+                    <button class="answer-option"><span class="btn-letter"></span> <span class="question-answer"></span></button>
+                    <button class="answer-option"><span class="btn-letter"></span> <span class="question-answer"></span></button>
                 </div>
             </div>
 
@@ -51,7 +44,7 @@
             </div>
 
             <!-- TEMPLATE RESPOSTA -->
-            <button class="answer-template hide">
+            <button class="answer-template hide answer-option">
                 <span class="btn-letter"></span> <span class="question-answer"></span>
             </button>
         </main>

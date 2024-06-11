@@ -16,7 +16,7 @@ body {
 
 .back-button {
     position: absolute;
-    top: -28px;
+    top: -15px;
     left: 3px;
     background-color: transparent;
     color: white;
@@ -58,12 +58,13 @@ body {
 }
 
 .login h2 {
-    font-size: 30px;
+    font-size: 27px;
     font-weight: bold;
     margin-bottom: -10px;
     text-align: center;
     justify-content: center;
     align-items: center;
+    letter-spacing: 1.5px;
 }
 
 .input > input,
@@ -78,7 +79,7 @@ button {
 }
 
 .login a:visited {
-    color: rgb(177, 0, 177);
+    color: rgb(37, 79, 216);
 }
 
 .login a:hover {
@@ -87,7 +88,7 @@ button {
 }
 
 button {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: -20px;
     outline: none;
     height: 40px;

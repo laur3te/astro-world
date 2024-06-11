@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --primary-color: #CC0000;
-    --background-color: #262626;
-    --border-color: #333333;
-    --text-color: #ffffff;
-    --secondary-text-color: #bbbbbb;
-}
-
 body { 
     font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('pic-background/earth.jpg');
@@ -20,7 +12,7 @@ body {
 form, input, select, textarea {
     margin: 0; 
     padding: 0; 
-    color: var(--text-color);
+    color: white;
 }
 
 .back-button {
@@ -31,7 +23,6 @@ form, input, select, textarea {
     color: white;
     border: none;
     border-radius: 5px;
-    font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-weight: bold;
     cursor: pointer;
@@ -44,85 +35,89 @@ form, input, select, textarea {
 }
 
 .box {
+    border-radius: 16px;
     margin: 0 auto;
     width: 500px;
-    background: #222222;
+    background: transparent;
     position: relative;
     top: 100px;
-    border: 1px solid #262626;
-}
-
-@media (max-width: 600px) {
-    .box {
-        width: 90%;
-        top: 50px;
-    }
-    .input_text, .message {
-        width: calc(100% - 20px);
-    }
-    .button {
-        left: auto;
-        width: 100%;
-        margin: 10px 0;
-    }
+    border: 1px solid;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .box h1 {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 27px;
     text-transform: uppercase;
-    padding: 5px 0 5px 10px;
-    border-bottom: 1px solid #161712;
-    border-top: 1px solid #161712;
+    padding: 15px 0 15px 10px;
     letter-spacing: 0.60px;
+    text-align: center;
 }
 
 .box label {
     width: 100%;
     display: block;
-    background: #1C1C1C;
-    border-top: 1px solid #262626;
-    border-bottom: 1px solid #161712;
-    padding: 10px 0 10px 0;
+    background: transparent;
+    padding: 10px 0;
 }
 
 .box label span {
     display: block;
-    color: #bbbbbb;
-    font-size: 12px;
+    color: white;
+    font-size: 13px;
     float: left;
     width: 100px;
     text-align: right;
-    padding: 5px 20px 0 0; /* superior | direita | inferior | esquerda */
+    padding: 10px 20px 0 0;
 }
 
 .input_text {
-    padding: 10px 10px;
+    padding: 10px;
     width: 200px;
-    background: var(--background-color);
-    border: 1px double var(--border-color);
+    background: transparent;
+    border-radius: 10px;
+    border: 1px double #333333;
 }
 
-.message{
+.message {
     font-family: 'Roboto', sans-serif;
-    padding: 7px 7px;
+    padding: 7px;
     width: 250px;
-    background: #262626;
-    border-bottom: 1px double #171717;
-    border-top: 1px double #171717;
-    border-left: 1px double #333333;
-    border-right: 1px double #333333;
+    border-radius: 10px;
+    background: transparent;
     overflow: hidden;
     height: 150px;
 }
 
 #charCount {
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     position: relative;
     left: 195px;
     margin: 2px 0 0 0;
+}
+
+.button {
+    font-weight: bolder;
+    margin: 10px;
+    padding: 7px;
+    background: #CC0000;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    left: 370px;
+    width: 100px;
+    border: 1px solid #CC0000;
+    transition: all 0.25s ease;
+}
+
+.button:hover {
+    color: white;
+    background: transparent;
 }
 
 @media (max-width: 600px) {
@@ -138,37 +133,6 @@ form, input, select, textarea {
         width: 100%;
         display: flex;
         justify-content: center;
-    }
-}
-
-.button{
-    font-weight: bolder;
-    margin: 10px ;
-    padding: 7px 7px;
-    background: var(--primary-color);
-    border: 0px;
-    border-radius: 40px;
-    cursor: pointer;
-    position: relative;
-    top: 1px;
-    left: 370px;
-    width: 100px;
-    border: 1px solid var(--primary-color);
-    transition: all 0.25s ease;
-}
-
-.button:hover {
-    color:white;
-    background: transparent;
-}
-
-@media (max-width: 600px) {
-    .box {
-        width: 90%;
-        top: 50px;
-    }
-    .input_text, .message {
-        width: calc(100% - 20px);
     }
     .button {
         left: auto;
