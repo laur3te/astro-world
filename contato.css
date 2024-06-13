@@ -36,7 +36,8 @@ form, input, select, textarea {
 
 .box {
     border-radius: 16px;
-    margin: 0 auto;
+    margin-top: 150px;
+    margin-left: 700px;
     width: 500px;
     background: transparent;
     position: relative;
