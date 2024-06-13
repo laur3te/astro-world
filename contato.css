@@ -34,14 +34,18 @@ form, input, select, textarea {
     color: #e4e4e99c;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .box {
     border-radius: 16px;
-    margin-top: 150px;
-    margin-left: 700px;
     width: 500px;
     background: transparent;
     position: relative;
-    top: 100px;
     border: 1px solid;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
