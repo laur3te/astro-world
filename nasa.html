@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nasa.css" />
+
+
+    <title>IMAGEM DO DIA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-image: url('pic-background/earth.jpg');
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            
+        }
+        h1, h2, p {
+            color: #ffff;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <button onclick="history.back()" class="back-button">VOLTAR</button>
+    <h1>Imagem astrnômica do dia! by:NASA</h1>
+    <div id="nasa-content">
+        <h2 id="title"></h2>
+        <img id="image" src="" alt="NASA Picture of the Day">
+        <p id="explanation"></p>
+    </div>
+
+    <script src="api.js"></script>
+</body>
+</html>
