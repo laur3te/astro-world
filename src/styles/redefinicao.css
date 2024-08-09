@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,13 +9,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('pic-background/earth.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../pictures/pic-background/earth.jpg');
 }
 
 .back-button {
     position: absolute;
-    top: -15px;
-    left: 3px;
+    top: 5px;
+    left: 2px;
     background-color: transparent;
     color: white;
     border: none;
@@ -40,10 +38,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 10px;
+    padding: 50px 10px 50px 10px;
 }
 
-.login {
+.redefinicao {
     width: 30%;
     display: flex;
     padding: 30px 40px;
@@ -57,14 +55,21 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.login h2 {
-    font-size: 27px;
+.redefinicao h2{
+    font-size: 25px;
     font-weight: bold;
-    margin-bottom: -10px;
-    text-align: center;
+    margin-bottom: -5px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    letter-spacing: 1.5px;
+}
+
+.redefinicao p {
+    margin-top: -5px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: normal;
 }
 
 .input > input,
@@ -78,17 +83,12 @@ button {
     margin-bottom: 15px;
 }
 
-.login a:visited {
-    color: rgb(37, 79, 216);
-}
-
-.login a:hover {
-    color: rgba(207, 0, 0, 0.911);
-    text-decoration: underline; 
+.input > input:focus {
+    border: 2px solid #ffffff;
 }
 
 button {
-    margin-top: 15px;
+    margin-top: 0px;
     margin-bottom: -20px;
     outline: none;
     height: 40px;
@@ -116,35 +116,4 @@ button:hover {
     margin-bottom: 5px;
     display: block;
     margin-top: 10px;
-}
-
-.login > p {
-    font-weight: normal;
-    text-align: center;
-}
-
-.icons {
-    margin-top: -10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.icons > .img {
-    width: 30%;
-    padding: 5px 10px;
-    background: white;
-    justify-content: center;
-    display: flex;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.icons > .img img {
-    max-width: 100%;
-    height: auto;
-}
-
-.icons > .img:hover {
-    background-color: transparent;
 }

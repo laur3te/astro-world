@@ -3,6 +3,9 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../pictures/pic-background/earth.jpg');
+
 }
 
 .back-button {
@@ -10,7 +13,7 @@ body {
     left: 3px;
     top: 10px;
     background-color: transparent;
-    color: black;
+    color: white;
     border: none;
     border-radius: 5px;
     font-family: "Roboto", sans-serif;
@@ -33,17 +36,18 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #ffff;
     font-size: 40px;
     text-align: center;
 }
 
 h2 {
     font-size: 35px;
+    color: #ffff;
 }
 
 p {
-    color: #666;
+    color: #ffff;
     font-size: 16px;
     line-height: 1.5;
     text-align: justify;
