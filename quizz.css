@@ -213,3 +213,25 @@ main {
       box-shadow: none;
     }
 }
+
+.correct-answer,
+.correct-answer .btn-letter {
+    animation: correctAnimation 0.5s ease-out forwards;
+}
+
+.wrong-answer,
+.wrong-answer .btn-letter {
+    animation: wrongAnimation 0.5s ease-out forwards;
+}
+
+@keyframes correctAnimation {
+    0% { background-color: #28a745; transform: scale(1); }
+    50% { background-color: #218838; transform: scale(1.1); }
+    100% { background-color: #28a745; transform: scale(1); }
+}
+
+@keyframes wrongAnimation {
+    0% { background-color: #dc3545; transform: scale(1); }
+    50% { background-color: #c82333; transform: scale(1.1); }
+    100% { background-color: #dc3545; transform: scale(1); }
+}

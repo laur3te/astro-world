@@ -206,5 +206,6 @@ restartBtn.addEventListener('click', function () {
   init();
 });
 
+
 // inicialização do quiz
 init();

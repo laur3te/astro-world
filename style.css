@@ -19,7 +19,7 @@ body {
 .topnav {
     grid-area: topnav;
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.0);
     padding: 10px;
@@ -29,7 +29,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
     gap: 40px;
     margin: 0;
     list-style: none;
