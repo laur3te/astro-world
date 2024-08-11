@@ -29,14 +29,14 @@
     </style>
 </head>
 <body>
-    <button onclick="history.back()" class="back-button">VOLTAR</button>
+    <button onclick="history.go(-2)" class="back-button">VOLTAR</button>
     <h1>Imagem astrnômica do dia! by:NASA</h1>
     <div id="nasa-content">
-        <h2 id="title"></h2>
-        <img id="image" src="" alt="NASA Picture of the Day">
+        <h1 id="title"></h1>
+        <img id="image" style="max-width: 100%; display: none;">
+        <iframe id="video" style="width: 100%; height: 700px; display: none ;" frameborder="0"></iframe>
         <p id="explanation"></p>
     </div>
-
     <script src="../js/api.js"></script>
 </body>
 </html>
