@@ -6,8 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             document.getElementById('title').textContent = data.title;
-            document.getElementById('image').src = data.url;
             document.getElementById('explanation').textContent = data.explanation;
+
+            if (data.media_type === 'image') {
+                document.getElementById('image').src = data.url;
+                document.getElementById('image').style.display = 'block';
+                document.getElementById('video').style.display = 'none';
+            } else if (data.media_type === 'video') {
+                document.getElementById('video').src = data.url;
+                document.getElementById('video').style.display = 'block';
+                document.getElementById('image').style.display = 'none';
+            }
         })
         .catch(error => console.log('Erro ao buscar dados da API:', error));
 });
