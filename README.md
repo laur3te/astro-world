@@ -2,8 +2,11 @@
 
 Bem-vindo(a) ao ASTRO WORLD! 🚀✨
 
-ASTRO WORLD é um projeto desenvolvido em HTML, CSS e JavaScript, desenvolvido por @laur3te ( Laura Marques ). Nosso objetivo é compartilhar a beleza do universo através de uma galeria de imagens e informações atualizadas pela API da NASA.
+ASTRO WORLD é um projeto desenvolvido em HTML, CSS e JavaScript. Nosso objetivo é compartilhar a beleza do universo através de uma galeria de imagens, jogos e informações atualizadas pela API da NASA.
 <br/><br/>
+
+![image](https://github.com/user-attachments/assets/4f7b7a34-aa05-4b76-85b5-a018f612a9a0)
+
 
 🔭 Funcionalidades:
 
