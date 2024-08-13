@@ -20,3 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.log('Erro ao buscar dados da API:', error));
 });
+
+
+// Script Botão de voltar 
+
+document.getElementById('back-button').addEventListener('click', function () {
+    const video = document.getElementById('video');
+    if (video.style.display !== 'none') {
+        history.go(-2);
+    } else {
+        history.back();
+    }
+});
